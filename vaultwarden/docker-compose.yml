@@ -1,3 +1,4 @@
+/*exige https*/
 services:
   vaultwarden:
     image: vaultwarden/server:1.30.5
@@ -17,3 +18,22 @@ services:
 
 volumes:
   vaultwarden_data:
+
+  /*
+  versão local
+  services:
+    vaultwarden:
+      image: vaultwarden/server:1.30.5
+      container_name: vaultwarden
+      restart: unless-stopped
+      ports:
+        - "8080:80"
+      volumes:
+        - vaultwarden_data:/data
+      environment:
+        - SIGNUPS_ALLOWED=true
+        - DOMAIN=http://localhost:8080
+
+volumes:
+  vaultwarden_data:
+  */
