@@ -1,0 +1,75 @@
+version: "3.9"
+
+services:
+  postgresql:
+    extends:
+      file: authentik/docker-compose.yml
+      service: postgresql
+
+  redis:
+    extends:
+      file: authentik/docker-compose.yml
+      service: redis
+
+  authentik:
+    extends:
+      file: authentik/docker-compose.yml
+      service: authentik
+
+  authentik-worker:
+    extends:
+      file: authentik/docker-compose.yml
+      service: authentik-worker
+
+  db:
+    extends:
+      file: nextcloud/docker-compose.yml
+      service: db
+
+  nextcloud:
+    extends:
+      file: nextcloud/docker-compose.yml
+      service: app
+
+  vaultwarden:
+    extends:
+      file: vaultwarden/docker-compose.yml
+      service: vaultwarden
+
+  wazuh.manager:
+    extends:
+      file: wazuh/docker-compose.yml
+      service: wazuh.manager
+
+  wazuh.indexer:
+    extends:
+      file: wazuh/docker-compose.yml
+      service: wazuh.indexer
+
+  wazuh.dashboard:
+    extends:
+      file: wazuh/docker-compose.yml
+      service: wazuh.dashboard
+
+volumes:
+  authentik_postgres:
+  authentik_redis:
+  authentik_media:
+  authentik_custom_templates:
+  nextcloud_db:
+  nextcloud_data:
+  vaultwarden_data:
+  wazuh_api_configuration:
+  wazuh_etc:
+  wazuh_logs:
+  wazuh_queue:
+  wazuh_var_multigroups:
+  wazuh_integrations:
+  wazuh_active_response:
+  wazuh_agentless:
+  wazuh_wodles:
+  filebeat_etc:
+  filebeat_var:
+  wazuh-indexer-data:
+  wazuh-dashboard-config:
+  wazuh-dashboard-custom:

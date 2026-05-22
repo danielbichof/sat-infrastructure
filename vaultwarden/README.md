@@ -2,9 +2,20 @@
 
 ## Como subir
 
-docker compose up -d
+1) Gere os certificados locais:
 
-Acesse: http://localhost:8080
+```bash
+cd vaultwarden
+./scripts/bootstrap-certs.sh
+```
+
+2) Suba o container:
+
+```bash
+docker compose up -d
+```
+
+Acesse: https://localhost:8443
 
 ## Credenciais
 - Crie sua conta no primeiro acesso

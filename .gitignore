@@ -1,3 +1,6 @@
 .env
 certs/
 vaultwarden/certs/*.pem
+node_modules/
+**/node_modules/wazuh/config/wazuh_indexer_ssl_certs/*.pem
+wazuh/config/wazuh_indexer_ssl_certs/*.key
