@@ -54,8 +54,7 @@ cp root.env.example .env
 ### Authentik
 
 cd authentik
-cp .env.example .env
-# edite .env e defina PG_PASS e AUTHENTIK_SECRET_KEY
+# .env usa o da raiz
 
 docker compose up -d
 Acesse: http://localhost:9000/if/flow/initial-setup/
@@ -63,7 +62,6 @@ Acesse: http://localhost:9000/if/flow/initial-setup/
 ### Nextcloud
 
 cd nextcloud
-./scripts/bootstrap-env.sh
 
 docker compose up -d
 Acesse: http://localhost:8080
@@ -71,7 +69,7 @@ Acesse: http://localhost:8080
 ### Vaultwarden
 
 cd vaultwarden
-# confira o README da pasta e ajuste as configuracoes locais
+./scripts/bootstrap-certs.sh
 
 docker compose up -d
 Acesse: https://localhost:8443
