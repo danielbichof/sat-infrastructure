@@ -27,9 +27,9 @@
 - [x] Repositório organizado.
       
 ## Entrega acadêmica
-- [ ] Nenhuma pendência em aberto.
-- [ ] Link do repo com acesso de leitura entregue
-- [ ] Vídeo aprovado (sem marcas proibidas, todos os alunos creditados)
-- [ ] Depoimento da i9+ incluído no vídeo
-- [ ] Post no Instagram com @extensaoup e @mestrerafael47
-- [ ] Links consolidados enviados ao professor Rafael até 28/05 às 17h
+- [x] Nenhuma pendência em aberto.
+- [x] Link do repo com acesso de leitura entregue
+- [x] Vídeo aprovado (sem marcas proibidas, todos os alunos creditados)
+- [x] Depoimento da i9+ incluído no vídeo
+- [x] Post no Instagram com @extensaoup e @mestrerafael47
+- [x] Links consolidados enviados ao professor Rafael até 28/05 às 17h
